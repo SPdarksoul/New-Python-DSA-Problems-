@@ -1,32 +1,16 @@
-class Node:
-    def __init__(self, key):
-        self.left = None
-        self.right = None
-        self.value = key
-
-def insert(root, key):
-    if root is None:
-        return Node(key)
-    else:
-        if root.value < key:
-            root.right = insert(root.right, key)
+def search(arr, target):
+    n = len(arr)
+    s, e = 0, n - 1
+    while s <= e:
+        mid = (s + e) // 2
+        if target < arr[mid]:
+            e = mid - 1
+        elif target > arr[mid]:
+            s = mid + 1
         else:
-            root.left = insert(root.left, key)
-    return root
+            return mid
+    return -1
 
-def inorder_traversal(root):
-    if root:
-        inorder_traversal(root.left)
-        print(root.value, end=' ')
-        inorder_traversal(root.right)
-
-# Example usage
-root = Node(50)
-root = insert(root, 30)
-root = insert(root, 20)
-root = insert(root, 40)
-root = insert(root, 70)
-root = insert(root, 60)
-root = insert(root, 80)
-
-inorder_traversal(root)  
+arr = [1, 2, 3, 4, 5, 6, 7]
+result = search(arr, 4)
+print(result)

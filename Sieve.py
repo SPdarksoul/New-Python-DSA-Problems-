@@ -1,35 +1,35 @@
 
 # Sieve of Eratosthenes
 
-# num  =int(input())
+num  =int(input())
 
 
-# def isprime(num):
-#     i =2
-#     while i*i <=num:
-#         if num%i == 0:
-#             returnb False
-#         i+1
-#     return True
+def isprime(num):
+    i =2
+    while i*i <=num:
+        if num%i == 0:
+            return False
+        i+1
+    return True
 
-# ans = isprime(num)
-# print (ans)   
-
-
-
+ans = isprime(num)
+print (ans)   
 
 
 
-# num  =int(input())
 
 
-# def isprime(num):
-#     i =2
-#     while i*i <=num:
-#         if num%i == 0:
-#             returnb False
-#         i+1
-#     return True
 
-# ans = isprime(num)
-# print (ans)        
+num  =int(input())
+
+
+def isprime(num):
+    i =2
+    while i*i <=num:
+        if num%i == 0:
+            return False
+        i+1
+    return True
+
+ans = isprime(num)
+print (ans)        
