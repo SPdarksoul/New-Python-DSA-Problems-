@@ -30,9 +30,6 @@ class LinkedList:
 if __name__ == '__main__':
     # Create a linked list
     linked_list = LinkedList()
-    
-    # Append some elements
-    # Define the Node class
 class Node:
     def __init__(self, data):
         self.data = data  # Initialize the node with data
@@ -59,6 +56,7 @@ class LinkedList:
             print(current_node.data, end=' ')
             current_node = current_node.next
         print()  # This print statement is outside the while loop
+
 
 # Example usage:
 if __name__ == '__main__':
